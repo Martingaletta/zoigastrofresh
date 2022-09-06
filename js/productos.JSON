@@ -1,4 +1,4 @@
-  [
+  {"comidas":[
     { "id": 1, "nombre": "Bocata con vegetales", "precio": 250, "imagen": "imagenes/bocatas.png", "promocion":"10% OFF" },
     { "id": 2, "nombre": "Pollo grillado", "precio": 250, "imagen": "imagenes/pollogrillado.jpg", "promocion": "10% OFF" },
     { "id": 3, "nombre": "Ensalada tibia de brócoli", "precio": 160, "imagen": "imagenes/tibiabrocoli.jpg", "promocion": "10 %OFF" },
@@ -7,4 +7,4 @@
     { "id": 6, "nombre": "Tarta de zanahoria y puerro", "precio": 160, "imagen": "imagenes/tartaZana.png", "promocion": "10% OFF" },
     { "id": 7, "nombre": "Ensalada de couscous", "precio": 160, "imagen": "imagenes/couscous.png", "promocion": "10%" },
     { "id": 8, "nombre": "Calabaza rellena", "precio": 250, "imagen": "imagenes/calabazaRellena.png", "promocion": "20% OFF" }
-]
+]}
