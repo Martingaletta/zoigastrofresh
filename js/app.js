@@ -136,8 +136,6 @@ function cambiarItem(event) {
 function comprar() {
     $('.carrito').html('')
     actualizarTotalCarrito()
-    alert("Gracias por tu compra! Pronto recibirás el pedido.")
-    alert("El costo del envío lo cobra el repartidor!, son $40.")
     console.log("Tarea Finalizada");
 }
 
