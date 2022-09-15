@@ -1,4 +1,4 @@
-// CONSULTAS USUARIOS y ARRAY CONSULTAS ------------------------ //
+// consultas usuarios y array //
 
 class Consulta {
     constructor(nombre, apellido, telefono, email, comentarios) {
@@ -12,7 +12,7 @@ class Consulta {
 
 const consultas = []
 
-// MOSTRAR CONSULTA ---------------------------- //
+// mostrar datos consulta //
 
 function mostrarDatos() {
 
@@ -46,7 +46,7 @@ function imprimir() {
 
 let botonEnviar = $('#btnEnviar').on('click', mostrarDatos)
 
-// BUSCADOR ----------------------------------- //
+//buscador //
 
 function mostrar() {
     alert("Ups! Pronto tendremos esta información disponible")
