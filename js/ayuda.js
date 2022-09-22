@@ -49,6 +49,6 @@ let botonEnviar = $('#btnEnviar').on('click', mostrarDatos)
 //buscador //
 
 function mostrar() {
-    alert("Ups! Pronto tendremos esta información disponible")
+    alert("Ups!")
 }
 let buscar = $('#buscador').on('click', mostrar)

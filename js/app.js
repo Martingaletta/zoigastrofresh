@@ -118,7 +118,6 @@ function actualizarTotalCarrito() {
 // borrar item carrito
 function borrarItem(event) {
     const clickBoton = event.target
-
     clickBoton.closest('.borrar').remove()
     actualizarTotalCarrito()
 }
@@ -137,6 +136,12 @@ function comprar() {
     $('.carrito').html('')
     actualizarTotalCarrito()
     console.log("Tarea Finalizada");
+    swal({
+        title: "Comida pronta!",
+        text: "En breves se le avisará cuanto demorará el cadete",
+        icon: "success",
+        button: "Quiero comer!",
+      });
 }
 
 
