@@ -140,7 +140,7 @@ function comprar() {
         title: "Comida pronta!",
         text: "En breves se le avisará cuanto demorará el cadete",
         icon: "success",
-        button: "Quiero comer!",
+        button: "OK!",
       });
 }
 
