@@ -151,3 +151,9 @@ function mostrar() {
     alert("Ups! Pronto tendremos esta información disponible")
 }
 let buscar = $('#buscador').on('click', mostrar)
+
+fetch('http://127.0.0.1:5500/js/productos.JSON')
+    .then ( (resp)=> resp.json () )
+    .then ( (data) => {
+        console.log(data)
+    })
