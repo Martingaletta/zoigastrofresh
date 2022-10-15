@@ -147,8 +147,39 @@ function comprar() {
 
 // buscador
 
-function mostrar() {
-    alert("Ups! Pronto tendremos esta información disponible")
+function mostrar(e) {
+    e.preventDefault();
+    const buscadorValor = document.getElementById("buscadorValor").value.toLowerCase()
+    if(buscadorValor != ''){
+        const parent = document.getElementById("products-items")
+        while (parent.firstChild) {
+
+            parent.firstChild.remove()
+        }
+        
+    }
+    const productosFiltrados = misProductos.filter((producto) =>  producto.nombre.toLowerCase().includes(buscadorValor))
+    console.log(productosFiltrados)
+    productosFiltrados.forEach((producto) => {
+        const filaCarta = document.createElement('div')
+        const carta = `<div class="item selfie col-lg-3 col-md-4 col-sm">
+                            <figure>
+                                <img src="../imagenes/couscous.png" alt="Ensalada Couscous" width="220px" height="200px" id="imagen">
+                                <figcaption>
+                                    <p id="titulo">${producto.nombre}.</p>
+                                </figcaption>
+                            </figure>
+                            <div>
+                                <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                                <small class="text-muted" id="precio">$160</small>
+                            </div>
+                        </div>`
+        
+        filaCarta.innerHTML = carta
+        parent.append(filaCarta)
+    })
+
+
 }
 let buscar = $('#buscador').on('click', mostrar)
 
@@ -157,3 +188,5 @@ fetch('http://127.0.0.1:5500/js/productos.JSON')
     .then ( (data) => {
         console.log(data)
     })
+
+

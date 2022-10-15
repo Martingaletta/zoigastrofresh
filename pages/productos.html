@@ -31,8 +31,8 @@
                         <a class="navLink" href="contacto.html">CONTACTO/AYUDA</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-navbar mr-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                <form class="d-flex" id="buscadorForm">
+                    <input class="form-navbar mr-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search" id="buscadorValor">
                     <button type="submit" id="buscador">Buscar</button>
                 </form>
             </div>
@@ -46,7 +46,7 @@
         <div id="productos" class="contenedor"></div>
         <div class="container">
             <div class="portfolio-menu mt-2 mb-4"></div>
-            <div class="portfolio-item row">
+            <div class="portfolio-item row" id="products-items">
                 <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
                         <img src="../imagenes/Bocatas.png" alt="Bocata de vegetales" width="220px" height="200px" id="imagen">
